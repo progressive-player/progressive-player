@@ -1,0 +1,56 @@
+:root {
+    font-size: 15px;
+    font-family: "Helvetica", sans-serif;
+    font-weight: 500;
+
+    /** Color Variables */
+    --text-primary: white;
+    --text-secondary: #a4a4a4;
+    --bg-primary: #0c1118;
+    --bg-secondary: #222937;
+    --bg-tertiary: #55678a;
+    --accent: #66F5A1;
+}
+
+body {
+    color: white;
+    background-color: var(--bg-primary);
+    margin: 0px;
+    padding: 0px;
+}
+
+body::-webkit-scrollbar{
+    width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track{
+    background: var(--bg-tertiary);
+}
+
+body::-webkit-scrollbar-thumb{
+    background: var(--accent);
+}
+
+main {
+    margin-left: 5rem;
+    margin-right: 5rem;
+}
+
+p {
+    text-indent:25px;
+}
+
+.navbar {
+    position: fixed;
+    background-color: var(--bg-secondary);
+}
+
+.main-nav {
+    width: 5rem;
+    height: 100vh;
+}
+
+.top-nav {
+    width: 100vw;
+    height: 4.5rem;
+}
