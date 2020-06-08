@@ -1,10 +1,7 @@
 <template>
   <div id="app">
-    <nav class="navbar top-nav"></nav>
-    <nav class="navbar main-nav"></nav>
-    <!-- <top-nav></top-nav> -->
+    <main-nav></main-nav>
     <home></home> 
-    <!-- <main-nav></main-nav> -->
   </div>
 </template>
 
@@ -12,7 +9,6 @@
 import TopNav from "@/components/TopNav.vue";
 import MainNav from "@/components/MainNav.vue";
 import Home from "@/views/Home.vue";
-// import "bootstrap/dist/css/bootstrap.css"
 import "@/assets/main.css";
 
 export default {
