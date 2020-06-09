@@ -27,7 +27,6 @@ jobs:
         add: 'dist'
         author_name: DamenH
         author_email: damen@damenhannah.com
-        cwd: ${{ GITHUB_WORKSPACE }}
         force: true
       env:
         GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
