@@ -25,7 +25,7 @@ jobs:
     - name: Deploy
       uses: s0/git-publish-subdir-action@master
       env:
-        REPO: progressive-player@github.com:progressive-player/progressive-player.github.io.git
+        REPO: git@github.com:progressive-player/progressive-player.github.io.git
         BRANCH: master
         FOLDER: dist
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
