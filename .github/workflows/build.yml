@@ -22,3 +22,11 @@ jobs:
       with:
         path: node_modules
         key: ${{ runner.os }}-primes
+    - uses: EndBug/add-and-commit@v4
+      with:
+        add: 'dist'
+        author_name: DamenH
+        author_email: damen@damenhannah.com
+        force: true
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }} # Leave this line unchanged
