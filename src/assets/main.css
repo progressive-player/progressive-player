@@ -41,6 +41,10 @@ main {
     padding: 1rem;
 }
 
+a {
+    -webkit-tap-highlight-color: transparent;
+}
+
 .navbar {
     position: fixed;
     background-color: var(--bg-secondary);
@@ -117,6 +121,8 @@ main {
 .nav-link:hover path{
     opacity: 1;
 }
+
+
 
 /* 
 @media screen and (max-width: 500px) {
