@@ -6,7 +6,7 @@
     --bg-primary: #0c1118;
     --bg-secondary: #222937;
     --bg-tertiary: #55678a;
-    --transition-speed: 200ms;
+    --transition-speed: 100ms;
 }
 
 body {
@@ -98,13 +98,12 @@ a {
 }
 
 .nav-link .svg-secondary{
-    transition: calc(var(--transition-speed) + 500ms);
+    transition: calc(var(--transition-speed) + 200ms);
 }
 
 .nav-link .svg-tertiary{
-    transition: calc(var(--transition-speed) + 900ms);
+    transition: calc(var(--transition-speed) + 400ms);
 }
-
 
 .nav-link:hover .svg-primary{
     fill: var(--text-primary);
@@ -122,8 +121,6 @@ a {
     margin-top: .1rem;
     transition: var(--transition-speed);
 }
-
-
 
 /* 
 @media screen and (max-width: 500px) {
