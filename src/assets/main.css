@@ -1,13 +1,12 @@
 :root {
     font-size: 12px;
     font-family: "Helvetica", sans-serif;
-    /** Color Variables */
     --text-primary: white;
     --text-secondary: #a4a4a4;
     --bg-primary: #0c1118;
     --bg-secondary: #222937;
     --bg-tertiary: #55678a;
-    --accent: #66F5A1;
+    --transition-speed: 200ms;
 }
 
 body {
@@ -62,13 +61,13 @@ a {
     height: 100vh;
 }
 
+.nav-item:first-child {
+    margin-top:1rem;
+}
+
 .nav-item {
     width: 100%;
     margin-bottom: 3rem;
-}
-
-.nav-item:first-child {
-    margin-top:1rem;
 }
 
 .nav-item:last-child {
@@ -90,13 +89,22 @@ a {
     fill: var(--text-secondary);
 }
 
-.link-text {
-    margin-top: .1rem;
-}
-
 .nav-link:hover{
     color: var(--text-primary)
 }
+
+.nav-link .svg-primary{
+    transition: calc(var(--transition-speed) + 100);
+}
+
+.nav-link .svg-secondary{
+    transition: calc(var(--transition-speed) + 200ms);
+}
+
+.nav-link .svg-tertiary{
+    transition: calc(var(--transition-speed) + 300ms);
+}
+
 
 .nav-link:hover .svg-primary{
     fill: green
@@ -120,6 +128,11 @@ a {
 
 .nav-link:hover path{
     opacity: 1;
+}
+
+.link-text {
+    margin-top: .1rem;
+    transition: var(--transition-speed);
 }
 
 

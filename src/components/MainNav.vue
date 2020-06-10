@@ -17,8 +17,8 @@
                         <svg viewBox="0 0 24 24">
                             <path d="M0 0h24v24H0V0z" fill="none"/>
                             <circle cx="6.2" cy="17.8" r="2.2" class="svg-primary"/>
-                            <path d="m4 4.4v2.8c7 0 12.7 5.7 12.7 12.7h2.8C19.6 11.4 12.6 4.4 4 4.4Z" opacity="0.25" class="svg-secondary"/>
-                            <path d="m4 10.1v2.8c3.9 0 7.1 3.2 7.1 7.1H13.9C13.9 14.5 9.5 10.1 4 10.1Z" opacity="0.5" class="svg-tertiary"/>
+                            <path d="m4 4.4v2.8c7 0 12.7 5.7 12.7 12.7h2.8C19.6 11.4 12.6 4.4 4 4.4Z" opacity="0.25" class="svg-tertiary" />
+                            <path d="m4 10.1v2.8c3.9 0 7.1 3.2 7.1 7.1H13.9C13.9 14.5 9.5 10.1 4 10.1Z" opacity="0.5" class="svg-secondary"/>
                         </svg>
                         <span class="link-text">Feeds</span>
                     </a>
