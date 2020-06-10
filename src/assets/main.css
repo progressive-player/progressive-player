@@ -107,28 +107,28 @@ a {
 
 
 .nav-link:hover .svg-primary{
-    fill: green
+    fill: var(--text-primary)
 }
 
-.nav-link:hover path{
+/* .nav-link:hover path{
     opacity: 1;
-}
+} */
 
 .nav-link:hover .svg-secondary{
-    fill: red
+    fill: var(--text-primary)
 }
 
-.nav-link:hover path{
+/* .nav-link:hover path{
     opacity: 1;
-}
+} */
 
 .nav-link:hover .svg-tertiary{
-    fill: blue
+    fill: var(--text-primary)
 }
 
-.nav-link:hover path{
+/* .nav-link:hover path{
     opacity: 1;
-}
+} */
 
 .link-text {
     margin-top: .1rem;
