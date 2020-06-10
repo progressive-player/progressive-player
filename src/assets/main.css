@@ -94,41 +94,29 @@ a {
 }
 
 .nav-link .svg-primary{
-    transition: calc(var(--transition-speed) + 100);
+    transition: calc(var(--transition-speed) + 100ms);
 }
 
 .nav-link .svg-secondary{
-    transition: calc(var(--transition-speed) + 200ms);
+    transition: calc(var(--transition-speed) + 500ms);
 }
 
 .nav-link .svg-tertiary{
-    transition: calc(var(--transition-speed) + 300ms);
+    transition: calc(var(--transition-speed) + 900ms);
 }
 
 
 .nav-link:hover .svg-primary{
-    fill: var(--text-primary)
+    fill: var(--text-primary);
 }
-
-/* .nav-link:hover path{
-    opacity: 1;
-} */
 
 .nav-link:hover .svg-secondary{
-    fill: var(--text-primary)
+    fill: var(--text-primary);
 }
-
-/* .nav-link:hover path{
-    opacity: 1;
-} */
 
 .nav-link:hover .svg-tertiary{
-    fill: var(--text-primary)
+    fill: var(--text-primary);
 }
-
-/* .nav-link:hover path{
-    opacity: 1;
-} */
 
 .link-text {
     margin-top: .1rem;
