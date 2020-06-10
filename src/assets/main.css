@@ -1,5 +1,5 @@
 :root {
-    font-size: 16px;
+    font-size: 12px;
     font-family: "Helvetica", sans-serif;
     /** Color Variables */
     --text-primary: white;
@@ -44,8 +44,8 @@ main {
 .navbar {
     position: fixed;
     background-color: var(--bg-secondary);
-    padding-left: 1rem;
-    padding-right: 1rem;
+    padding-left: .5rem;
+    padding-right: .5rem;
 }
 
 .navbar-nav {
@@ -80,21 +80,45 @@ main {
     align-items: center;
 }
 
-.nav-link:hover svg{
-    fill: var(--text-primary)
+.nav-link svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--text-secondary);
+}
+
+.link-text {
+    margin-top: .1rem;
 }
 
 .nav-link:hover{
     color: var(--text-primary)
 }
 
-.link-text {
-    font-size: 13px;
-    margin-top: .1rem;
+.nav-link:hover .svg-primary{
+    fill: green
 }
 
-.nav-link svg {
-    width: 2rem;
-    height: 2rem;
-    fill: var(--text-secondary);
+.nav-link:hover path{
+    opacity: 1;
 }
+
+.nav-link:hover .svg-secondary{
+    fill: red
+}
+
+.nav-link:hover path{
+    opacity: 1;
+}
+
+.nav-link:hover .svg-tertiary{
+    fill: blue
+}
+
+.nav-link:hover path{
+    opacity: 1;
+}
+
+/* 
+@media screen and (max-width: 500px) {
+
+} */
