@@ -43,7 +43,7 @@
                         <span class="link-text">Downloads</span>
                     </a>
                 </li>
-                <li class="nav-item">
+                <li class="nav-item sidebar-settings">
                     <a href="./settings" class="nav-link" aria-label="Settings">
                         <svg viewBox="0 0 24 24" >
                             <path d="M0 0h24v24H0V0z" fill="none"/>

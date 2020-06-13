@@ -17,18 +17,6 @@ body {
     padding: 0;
 }
 
-body::-webkit-scrollbar{
-    width: 0.25rem;
-}
-
-body::-webkit-scrollbar-track{
-    background: var(--bg-tertiary);
-}
-
-body::-webkit-scrollbar-thumb{
-    background: var(--accent);
-}
-
 h1 {
     text-align: center;
 }
@@ -62,7 +50,7 @@ a {
 }
 
 .nav-item:first-child {
-    margin-top:1rem;
+    margin-top: 1rem;
 }
 
 .nav-item {
@@ -81,6 +69,7 @@ a {
     display: flex;
     flex-direction: column;
     align-items: center;
+    transition: calc(var(--transition-speed) + 100ms);
 }
 
 .nav-link svg {
@@ -89,40 +78,65 @@ a {
     fill: var(--text-secondary);
 }
 
-.nav-link:hover{
+.nav-link:hover {
     color: var(--text-primary)
 }
 
-.nav-link .svg-primary{
+.nav-link .svg-primary {
+    transition: calc(var(--transition-speed) + 50ms);
+}
+
+.nav-link .svg-secondary {
     transition: calc(var(--transition-speed) + 100ms);
 }
 
-.nav-link .svg-secondary{
+.nav-link .svg-tertiary {
     transition: calc(var(--transition-speed) + 200ms);
 }
 
-.nav-link .svg-tertiary{
-    transition: calc(var(--transition-speed) + 400ms);
-}
-
-.nav-link:hover .svg-primary{
+.nav-link:hover .svg-primary {
     fill: var(--text-primary);
 }
 
-.nav-link:hover .svg-secondary{
+.nav-link:hover .svg-secondary {
     fill: var(--text-primary);
 }
 
-.nav-link:hover .svg-tertiary{
+.nav-link:hover .svg-tertiary {
     fill: var(--text-primary);
 }
 
 .link-text {
     margin-top: .1rem;
-    transition: var(--transition-speed);
 }
 
-/* 
-@media screen and (max-width: 500px) {
+/* Small screens */
 
-} */
+@media only screen and (max-width: 750px) {
+    main {
+        margin: 0;
+    }
+    .navbar {
+        padding: 0;
+        width: 100vw;
+        height: 5rem;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .nav-item {
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+    .sidebar-settings {
+        display: none;
+    }
+}
