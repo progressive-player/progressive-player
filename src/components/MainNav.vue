@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style>
+<style scoped>
 .navbar {
     position: fixed;
     background-color: var(--bg-secondary);
@@ -105,42 +105,6 @@ export default {
     transition: calc(var(--transition-speed) + 100ms);
 }
 
-.nav-link svg {
-    width: 2.5rem;
-    height: 2.5rem;
-    fill: var(--text-secondary);
-}
-
-.nav-link:hover {
-    color: var(--text-primary);
-}
-
-.nav-link .svg-primary {
-    transition: calc(var(--transition-speed) + 50ms);
-}
-
-.nav-link .svg-secondary {
-    transition: calc(var(--transition-speed) + 100ms);
-}
-
-.nav-link .svg-tertiary {
-    transition: calc(var(--transition-speed) + 200ms);
-}
-
-.nav-link:hover .svg-primary {
-    fill: var(--text-primary);
-    opacity: 100%;
-}
-
-.nav-link:hover .svg-secondary {
-    fill: var(--text-primary);
-    opacity: 50%;
-}
-
-.nav-link:hover .svg-tertiary {
-    fill: var(--text-primary);
-    opacity: 30%;
-}
 
 /* Small screens */
 @media only screen and (max-width: 750px) {
