@@ -64,3 +64,109 @@ export default {
 };
 </script>
 
+<style>
+.navbar {
+    position: fixed;
+    background-color: var(--bg-secondary);
+    padding-left: .5rem;
+    padding-right: .5rem;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+}
+
+.nav-item:first-child {
+    margin-top: 1rem;
+}
+
+.nav-item {
+    width: 100%;
+    margin-bottom: 3rem;
+}
+
+.nav-item:last-child {
+    margin-top: auto;
+    margin-bottom: 1rem;
+}
+
+.nav-link {
+    color: var(--text-secondary);
+    text-decoration: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: calc(var(--transition-speed) + 100ms);
+}
+
+.nav-link svg {
+    width: 2.5rem;
+    height: 2.5rem;
+    fill: var(--text-secondary);
+}
+
+.nav-link:hover {
+    color: var(--text-primary)
+}
+
+.nav-link .svg-primary {
+    transition: calc(var(--transition-speed) + 50ms);
+}
+
+.nav-link .svg-secondary {
+    transition: calc(var(--transition-speed) + 100ms);
+}
+
+.nav-link .svg-tertiary {
+    transition: calc(var(--transition-speed) + 200ms);
+}
+
+.nav-link:hover .svg-primary {
+    fill: var(--text-primary);
+}
+
+.nav-link:hover .svg-secondary {
+    fill: var(--text-primary);
+}
+
+.nav-link:hover .svg-tertiary {
+    fill: var(--text-primary);
+}
+
+.link-text {
+    margin-top: .1rem;
+}
+
+/* Small screens */
+@media only screen and (max-width: 750px) {
+    .navbar {
+        padding: 0;
+        width: 100vw;
+        height: 5rem;
+        bottom: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .navbar-nav {
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+    }
+    .nav-item {
+        justify-content: center;
+        align-items: center;
+        margin: 0 !important;
+    }
+    .sidebar-settings {
+        display: none;
+    }
+}
+</style>
