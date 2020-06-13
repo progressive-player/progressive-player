@@ -64,7 +64,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .navbar {
     position: fixed;
     background-color: var(--bg-secondary);

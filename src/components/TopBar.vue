@@ -35,7 +35,7 @@ export default {
 };
 </script>
 
-<style scoped>
+<style>
 .topbar {
     position: fixed;
     background-color: var(--bg-secondary);
