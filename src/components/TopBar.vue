@@ -7,7 +7,7 @@
                         <svg viewBox="0 0 24 24">
                             <path d="M0 0h24v24H0z" fill="none"/>
                             <path d="M7 18H9V6H7Z" opacity="0.5" class="svg-secondary"/>
-                            <path d="m11 22h2V2h-2z" class="top-primary"/>
+                            <path d="m11 22h2V2h-2z" class="svg-primary"/>
                             <path d="M3 14H5V10H3Z" opacity="0.25" class="svg-tertiary"/>
                             <path d="m15 18h2V6h-2z" opacity="0.5" class="svg-secondary"/>
                             <path d="m19 10v4h2v-4z" opacity="0.25" class="svg-tertiary"/>
@@ -34,44 +34,3 @@ export default {
     name: "TopNav",
 };
 </script>
-
-<style>
-.topbar {
-    position: fixed;
-    background-color: var(--bg-secondary);
-    padding: 0;
-    top: 0;
-}
-
-.topbar-nav {
-    list-style: none;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
-    width: 100vw;
-}
-
-.top-item:first-child {
-    margin-left: 1rem;
-    margin-right: auto;
-}
-
-.top-item:last-child {
-    margin-left: auto;
-    margin-right: 1rem;
-}
-
-.top-link {
-    color: var(--text-secondary);
-    text-decoration: none;
-    display: flex;
-    transition: calc(var(--transition-speed) + 100ms);
-}
-
-/* Small screens */
-@media only screen and (min-width: 750px) {
-    .topbar {
-        display: none;
-    }
-}
-</style>
