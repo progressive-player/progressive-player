@@ -1,19 +1,22 @@
 <template>
   <div id="application">
     <main-nav></main-nav>
+    <top-bar></top-bar>
     <home></home> 
   </div>
 </template>
 
 <script lang="ts">
-import MainNav from "@/components/MainNav.vue";
 import Home from "@/views/Home.vue";
+import MainNav from "@/components/MainNav.vue";
+import TopBar from "@/components/TopBar.vue";
 
 export default {
     name: "App",
     components: {
+        Home,
         MainNav,
-        Home
+        TopBar
     }
 };
 </script>
@@ -57,6 +60,7 @@ a {
 @media only screen and (max-width: 750px) {
     main {
         margin: 0;
+        padding: 3.5rem;
     }
 }
 </style>
