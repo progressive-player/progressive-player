@@ -20,7 +20,7 @@ jobs:
     - name: Add CNAME
       uses: finnp/create-file-action@master
       env:
-        FILE_NAME: CNAME
+        FILE_NAME: dist/CNAME
         FILE_DATA: fortifico.dev
     - name: Deploy
       uses: s0/git-publish-subdir-action@master
