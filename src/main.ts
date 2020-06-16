@@ -3,4 +3,3 @@ import App from "@/App.vue";
 
 createApp(App as any).mount("#app")
 
-//test build

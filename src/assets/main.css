@@ -2,7 +2,7 @@
     font-size: 12px;
     font-family: "Helvetica", sans-serif;
     --text-primary: white;
-    --text-secondary: #a4a4a4;
+    --text-secondary: #e7e7e7;
     --bg-primary: #0c1118;
     --bg-secondary: #222937;
     --bg-tertiary: #55678a;
@@ -130,15 +130,11 @@ a {
     margin-left: auto;
     margin-right: 1rem;
 }
-
 @media only screen and (max-width: 750px) {
     main {
         margin: 0;
         padding: 3.5rem;
     }
-}
-
-@media only screen and (max-width: 750px) {
     .navbar {
         padding: 0;
         width: 100vw;
