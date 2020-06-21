@@ -1,14 +1,14 @@
 const fs = require('fs');
 
-var data = fs.readFileSync('public/bundle.js', 'utf-8');
-data = data.split("\\n        ").join("");
-data = data.split("\\n    ").join("");
-data = data.split("   ").join("");
+var bundle = fs.readFileSync('public/bundle.js', 'utf-8');
+var index = fs.readFileSync('public/index.html', 'utf-8');
 
-fs.writeFileSync('public/bundle.js', data, 'utf-8');
+bundle = bundle.split('\\n        ').join('');
+bundle = bundle.split('\\n    ').join('');
+bundle = bundle.split('   ').join('');
 
-var data2 = fs.readFileSync('public/index.html', 'utf-8');
-data2 = data2.split("\n").join("");
-data2 = data2.split("\t").join("");
+index = index.split('\n').join('');
+index = index.split('\t').join('');
 
-fs.writeFileSync('public/index.html', data2, 'utf-8');
+fs.writeFileSync('public/bundle.js', bundle, 'utf-8');
+fs.writeFileSync('public/index.html', index, 'utf-8');
