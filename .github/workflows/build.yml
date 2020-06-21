@@ -20,12 +20,12 @@ jobs:
     - name: Add CNAME
       uses: finnp/create-file-action@master
       env:
-        FILE_NAME: dist/CNAME
+        FILE_NAME: public/CNAME
         FILE_DATA: fortifico.dev
     - name: Deploy
       uses: s0/git-publish-subdir-action@master
       env:
         REPO: git@github.com:progressive-player/progressive-player.github.io.git
         BRANCH: master
-        FOLDER: dist
+        FOLDER: public
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
