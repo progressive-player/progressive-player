@@ -9,7 +9,7 @@ bundle = bundle.split('   ').join('');
 
 index = index.split('\n').join('');
 index = index.split('\t').join('');
-index = index.split('>    <').join('');
+index = index.split('>    <').join('><');
 index = index.split('    ').join('');
 
 fs.writeFileSync('public/bundle.js', bundle, 'utf-8');
