@@ -4,6 +4,6 @@
   "compilerOptions": {
       "target": "es6",
       "module": "es6",
-      "types": ["@pyoner/svelte-types"]
+      "types": ["@pyoner/svelte-types", "svelte"]
   }
 }

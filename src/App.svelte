@@ -1,11 +1,13 @@
 <script>
-	export let name;
+import MainNav from "./components/MainNav.svelte";
+import TopBar from "./components/TopBar.svelte";
 </script>
 
 <style>
-	h1 {
-		color: purple;
-	}
+
 </style>
 
-<h1>Hello {name}!</h1>
+<div id="application">
+  <MainNav />
+  <TopBar />
+</div>
