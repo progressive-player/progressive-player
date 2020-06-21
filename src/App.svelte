@@ -1,6 +1,7 @@
 <script>
 import MainNav from "./components/MainNav.svelte";
 import TopBar from "./components/TopBar.svelte";
+import Home from "./routes/Home.svelte";
 </script>
 
 <style>
@@ -10,4 +11,5 @@ import TopBar from "./components/TopBar.svelte";
 <div id="application">
   <MainNav />
   <TopBar />
+  <Home />
 </div>
