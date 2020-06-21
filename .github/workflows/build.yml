@@ -17,6 +17,7 @@ jobs:
         node-version: v14.2.0
     - run: npm install
     - run: npm run build
+    - run: node tranform.js
     - name: Add CNAME
       uses: finnp/create-file-action@master
       env:
