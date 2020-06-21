@@ -1,5 +1,13 @@
-import { createApp } from "vue";
-import App from "@/App.vue";
+import App from './App.svelte';
 
-createApp(App as any).mount("#app")
+const app = new App({
+	target: document.body,
+	props: {
+		name: 'world'
+	}
+});
 
+declare const window: any;
+window.app = app;
+
+export default app;
