@@ -14,10 +14,12 @@
         <LogoIcon />
       </div>
     </li>
+
     <li class="top-item">
       <a href="./settings" class="nav-link" aria-label="Settings">
         <SettingsIcon />
       </a>
     </li>
+
   </ul>
 </nav>
