@@ -16,17 +16,16 @@ jobs:
       with:
         node-version: v14.2.0
     - run: npm install
-    - run: npm run build
-    - run: node transform.js
+    - run: npm run export
     - name: Add CNAME
       uses: finnp/create-file-action@master
       env:
-        FILE_NAME: public/CNAME
+        FILE_NAME: __sapper__/export/CNAME
         FILE_DATA: fortifico.dev
     - name: Deploy
       uses: s0/git-publish-subdir-action@master
       env:
         REPO: git@github.com:progressive-player/progressive-player.github.io.git
         BRANCH: master
-        FOLDER: public
+        FOLDER: __sapper__/export
         SSH_PRIVATE_KEY: ${{ secrets.DEPLOY_PRIVATE_KEY }}
