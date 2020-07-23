@@ -3,7 +3,7 @@
 	"theme_color": "#181c25",
 	"name": "Web Player",
 	"short_name": "Web Player",
-	"display": "minimal-ui",
+	"display": "standalone",
 	"start_url": "/",
 	"icons": [
 		{
@@ -11,11 +11,6 @@
 			"sizes": "731x731",
 			"type": "image/png",
 			"purpose": "any maskable"
-		},
-		{
-			"src": "favicon.ico",
-			"sizes": "48x48",
-			"type": "image/ico"
 		}
 	]
 }
