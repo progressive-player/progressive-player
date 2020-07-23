@@ -1,6 +1,6 @@
 {
-	"background_color": "#ffffff",
-	"theme_color": "#333333",
+	"background_color": "#0d1116",
+	"theme_color": "#181c25",
 	"name": "Web Player",
 	"short_name": "Web Player",
 	"display": "minimal-ui",
@@ -8,8 +8,9 @@
 	"icons": [
 		{
 			"src": "logo.png",
-			"sizes": "512x512",
-			"type": "image/png"
+			"sizes": "731x731",
+			"type": "image/png",
+			"purpose": "any maskable"
 		},
 		{
 			"src": "favicon.ico",
